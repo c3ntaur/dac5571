@@ -18,7 +18,7 @@ void setup() {
 
 void loop() {
 
-  setVoltage(I2C_ADDR,dac_value);
+  setVoltage(dac_value,I2C_ADDR);
   Serial.print("Setting DAC value to: " + dac_value);
   delay(1000);
 
